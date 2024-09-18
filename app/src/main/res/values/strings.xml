@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="make_appointment">MAKE AN APPOINTMENT</string>
+    <string name="patient_access">PATIENT ACCESS</string>
+    <string name="hotline_label">Hotline: 1287</string>
+    <string name="my_account">My Account</string>
+    <string name="find_doctor">Find a Doctor</string>
+    <string name="test_results">Test Results</string>
+    <string name="online_admission">Online Admission</string>
+    <string name="physicians_stat">85+ Physicians</string>
+    <string name="staff_stat">500+ Staff</string>
+    <string name="hospital_beds_stat">300 Beds</string>
+
+        <string name="category_image_desc">Category Image</string>
+        <string name="category_text_default">Category Name</string>
+
+
+</resources>

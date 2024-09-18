@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Toolbar with back button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00796B"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:contentInsetStart="0dp"
+    android:contentInsetEnd="0dp"
+    android:padding="8dp"
+    android:title="Payment Details"
+    android:titleTextColor="#FFFFFF" />
+
+    <!-- Payment method details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <!-- Dynamic content will be added here based on the selected payment method -->
+        <TextView
+            android:id="@+id/payment_method_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:text="Enter your payment details below:" />
+
+        <!-- Additional fields will be added dynamically here -->
+
+    </LinearLayout>
+
+</RelativeLayout>

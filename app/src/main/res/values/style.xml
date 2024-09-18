@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">#3D5AFE</item>
+        <item name="android:progressTintMode">src_in</item>
+        <item name="android:secondaryProgressTint">#3D5AFE</item>
+        <item name="android:secondaryProgressTintMode">src_in</item>
+        <item name="android:backgroundTint">#3D5AFE</item>
+    </style>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/linearLayout"
+    android:background="@color/blue"> <!-- Set blue background -->
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Personal Details"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+
+        android:contentDescription="Back"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@android:color/black"/>
+
+    <!-- Father's Name -->
+    <EditText
+        android:id="@+id/editTextFatherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Father Name"
+        android:textColor="@android:color/black"/>
+
+    <!-- Mother's Name -->
+    <EditText
+        android:id="@+id/editTextMotherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mother Name"
+        android:textColor="@android:color/black"/>
+
+    <!-- Age -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:textColor="@android:color/black"/>
+
+    <!-- Blood Group -->
+    <EditText
+        android:id="@+id/editTextBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood Group"
+        android:textColor="@android:color/black"/>
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="@android:color/black"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"/>
+
+    <!-- Medical History -->
+    <EditText
+        android:id="@+id/editTextMedicalHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medical History"
+        android:textColor="@android:color/black"/>
+
+    <!-- Kids -->
+    <EditText
+        android:id="@+id/editTextKids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kids"
+        android:textColor="@android:color/black"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@color/green"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:title="Home"
+        android:icon="@drawable/vec_home" /> <!-- Replace with your home icon -->
+
+    <item
+        android:id="@+id/tab_categories"
+        android:title="Categories"
+        android:icon="@drawable/category" /> <!-- Replace with your categories icon -->
+
+    <item
+        android:id="@+id/tab_basket"
+        android:title="Basket"
+        android:icon="@drawable/vec_basket" /> <!-- Replace with your basket icon -->
+
+    <item
+        android:id="@+id/tab_profile"
+        android:title="Profile"
+        android:icon="@drawable/vec_person" /> <!-- Replace with your profile icon -->
+</menu>

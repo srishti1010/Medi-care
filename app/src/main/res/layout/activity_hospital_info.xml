@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        android:padding="8dp"
+        android:title="Hospital Information"
+        android:titleTextColor="#FFFFFF" /> <!-- Add the back arrow icon here -->
+
+    <!-- ScrollView for hospital details -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hospital Picture -->
+            <ImageView
+                android:id="@+id/hospital_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hospital"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Hospital Name -->
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Hospital Qualities -->
+            <TextView
+                android:id="@+id/hospital_qualities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qualities:\n- High quality care\n- Experienced staff\n- Modern facilities"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- New Machines in Market -->
+            <TextView
+                android:id="@+id/new_machines_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Machines in Market"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ListView for new machines -->
+            <ListView
+                android:id="@+id/new_machines_list"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:padding="8dp"/>
+
+            <!-- Address -->
+            <TextView
+                android:id="@+id/hospital_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: 123 Hospital Lane, City, Country"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/hospital_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: contact@hospital.com"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/hospital_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: +123456789"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Rating Bar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Rating:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <RatingBar
+                android:id="@+id/hospital_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.5"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- More Info Button -->
+            <Button
+                android:id="@+id/more_info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Info"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Reviews Heading -->
+            <TextView
+                android:id="@+id/hospital_reviews_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Reviews"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Reviews Text -->
+            <TextView
+                android:id="@+id/hospital_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review 1: Excellent service.\nReview 2: Friendly staff and clean facilities."
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

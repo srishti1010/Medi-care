@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/blue">
+
+    <!-- Doctor Image (Circular) -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/doc1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Doctor Name -->
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Doctor Name"
+        app:layout_constraintTop_toBottomOf="@id/doctor_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!-- Doctor Email -->
+    <TextView
+        android:id="@+id/doctor_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="Email: example@domain.com"
+        app:layout_constraintTop_toBottomOf="@id/doctor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!-- Doctor Rating -->
+    <RatingBar
+        android:id="@+id/doctor_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="4"
+        android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/doctor_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!-- Doctor Location -->
+    <TextView
+        android:id="@+id/doctor_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Location: City, Hospital Name"
+        app:layout_constraintTop_toBottomOf="@id/doctor_rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!-- Doctor Degree and Achievements (Paragraph) -->
+    <TextView
+        android:id="@+id/doctor_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Dr. XYZ has earned a degree in medicine from ABC University and has achieved several accolades for outstanding work in healthcare and patient treatment."
+        app:layout_constraintTop_toBottomOf="@id/doctor_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="24dp"/> <!-- Adjust this value to shift the TextView downwards -->
+
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/menuu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

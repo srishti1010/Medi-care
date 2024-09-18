@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1565C0"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/doc"/>
+
+    <TextView
+        android:id="@+id/appointment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Doctor Appointment"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/> <!-- Make text bold -->
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Log in"
+        android:textColor="@android:color/white"
+        android:background="@drawable/border_radius"
+        android:padding="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create account"
+        android:textColor="#1565C0"
+    android:background="@drawable/create_account_button"
+    android:padding="12dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/back1"
+    android:gravity="center">
+
+    <!-- Logo Text at the Top Center -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MedicareLogin"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Email Input Field with Icon and Transparent Box -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/transparent_class"
+        android:padding="10dp"
+        android:drawableStart="@drawable/email_small"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input Field with Icon and Transparent Box -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/transparent_class"
+        android:padding="10dp"
+        android:drawableStart="@drawable/lock_small"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:background="@drawable/border_radius"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Forgot Password Text -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"/>
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/border_radius"
+        android:text="Create account"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
